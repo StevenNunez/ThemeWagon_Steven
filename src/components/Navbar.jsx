@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const handleScroll = (e, id) => {
@@ -10,10 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white fixed w-full z-50 shadow-md">
-      <div className="container mx-auto flex justify-between items-center px-4 py-4 md:px-6">
-        <Link to="/" className="text-2xl font-bold text-blue-600">Klean</Link>
-        <ul className="flex space-x-4 md:space-x-6 font-medium text-gray-700">
+    <nav className="w-full bg-gradient-to-r from-[#fdf2f2] via-white to-[#e8f0ff] shadow-md">
+      <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
+        <div className="flex items-center gap-2">
+          <img src="/navbar/logo.png" alt="Klean Logo" className="h-6" />
+        </div>
+        <ul className="flex space-x-4 md:space-x-6 font-medium text-gray-700 text-sm">
           <li>
             <Link to="/" className="hover:text-blue-600">Home</Link>
           </li>
@@ -48,6 +50,12 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+        <div className="flex items-center gap-3 text-sm font-semibold">
+          <button className="text-blue-500 hover:underline">Log In</button>
+          <button className="bg-white text-purple-500 px-4 py-1 rounded-full shadow-md hover:bg-purple-50 transition">
+            Sign Up
+          </button>
+        </div>
       </div>
     </nav>
   );
