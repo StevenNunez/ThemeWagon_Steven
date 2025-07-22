@@ -27,7 +27,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-24 px-4 bg-white">
+    <section className="bg-gradient-to-br from-[#fdf6f6] via-[#f5f7ff] to-[#e8f8ff] py-12 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-secondary mb-4">
           Our Team
@@ -46,17 +46,14 @@ const Team = () => {
               <h3 className="text-xl font-semibold text-secondary">{member.name}</h3>
               <p className="text-gray-500 mb-2">{member.role}</p>
               <div className="flex justify-center space-x-4"></div>
-                        <div className="flex justify-center md:justify-start space-x-4">
-            <button className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-              Demo
-            </button>
-          </div>
-
-        </div>
-
-
+            </div>
           ))}
         </div>
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <button className="text-sm font-medium px-6 py-2 border border-blue-400 text-blue-500 rounded-full hover:bg-blue-50 transition">
+          View full team
+        </button>
       </div>
     </section>
   );
