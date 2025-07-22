@@ -28,7 +28,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-[#fdf6f6] via-[#f5f7ff] to-[#e8f8ff] py-10 md:py-12">
+      <div className="bg-gradient-to-br from-[#e8f8ff] via-[#f5f7ff] to-[#fdf6f6] py-10 md:py-12">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-12">
             {clients.map((logo, idx) => (
